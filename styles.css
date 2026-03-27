@@ -506,9 +506,22 @@ footer {
     min-width: 280px;
   }
 
-  .card:nth-child(3) {
-    flex: 1 1 100%;
-  }
+  /* Card 1 - first */
+.card:nth-child(1) {
+  order: 1;
+}
+
+/* Card 3 - appears second */
+.card:nth-child(3) {
+  order: 2;
+  flex: 1 1 48%; 
+}
+
+/* Card 2 - appears last, full width */
+.card:nth-child(2) {
+  order: 3;
+  flex: 1 1 100%;
+}
 
   .card-body h3 {
     line-height: 27px;
@@ -538,6 +551,12 @@ footer {
 @media (max-width: 767px) {
   .nav-links {
     display: none;
+  }
+  .card:nth-child(1),
+  .card:nth-child(2),
+  .card:nth-child(3) {
+    order: unset;
+    flex: 1 1 100%;
   }
 }
 @media (min-width: 768px) {
