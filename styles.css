@@ -74,7 +74,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
-} 
+}
 .logo {
   display: flex;
   align-items: center;
@@ -507,21 +507,21 @@ footer {
   }
 
   /* Card 1 - first */
-.card:nth-child(1) {
-  order: 1;
-}
+  .card:nth-child(1) {
+    order: 1;
+  }
 
-/* Card 3 - appears second */
-.card:nth-child(3) {
-  order: 2;
-  flex: 1 1 48%; 
-}
+  /* Card 3 - appears second */
+  .card:nth-child(3) {
+    order: 2;
+    flex: 1 1 48%;
+  }
 
-/* Card 2 - appears last, full width */
-.card:nth-child(2) {
-  order: 3;
-  flex: 1 1 100%;
-}
+  /* Card 2 - appears last, full width */
+  .card:nth-child(2) {
+    order: 3;
+    flex: 1 1 100%;
+  }
 
   .card-body h3 {
     line-height: 27px;
@@ -544,9 +544,6 @@ footer {
     max-width: 520px;
     margin-inline: auto;
   }
-  .footer-cols {
-    grid-template-columns: 1fr;
-  }
 }
 @media (max-width: 767px) {
   .nav-links {
@@ -557,6 +554,9 @@ footer {
   .card:nth-child(3) {
     order: unset;
     flex: 1 1 100%;
+  }
+  .footer-cols {
+    grid-template-columns: 1fr;
   }
 }
 @media (min-width: 768px) {
