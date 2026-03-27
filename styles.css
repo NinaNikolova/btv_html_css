@@ -152,7 +152,6 @@ nav {
 }
 .nav-drawer a {
   display: block;
-  font-size: clamp(26px, 7vw, 40px);
   font-weight: 700;
   letter-spacing: -0.03em;
   padding: 14px 0;
@@ -452,7 +451,7 @@ footer {
 }
 
 /* tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .hero {
     padding-top: clamp(40px, 6vw, 60px);
     padding-bottom: 32px;
@@ -545,7 +544,6 @@ footer {
     margin-inline: auto;
   }
 }
-/* mobile */
 @media (max-width: 767px) {
   .nav-links {
     display: none;
@@ -560,7 +558,6 @@ footer {
     grid-template-columns: 1fr;
   }
 }
-/* desktop */
 @media (min-width: 768px) {
   .hamburger {
     display: none;
