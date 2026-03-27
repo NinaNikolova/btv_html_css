@@ -119,15 +119,17 @@ nav {
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
-  padding: 6px;
+  padding: 20px;
   user-select: none;
+  background-color: #EDEEF3;
+  border-radius: 999px;
 }
 
 .hamburger span {
   display: block;
   width: 22px;
   height: 1.5px;
-  background: var(--black);
+  background: var(--base-surface-on-primary);
   border-radius: 2px;
   transition:
     transform 0.25s,
