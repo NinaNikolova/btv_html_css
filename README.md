@@ -24,5 +24,5 @@ This project runs as a static HTML site. To view it correctly, use **Live Server
 btv_html_css/
 ├── index.html       # Main entry point
 ├── styles.css/      # Stylesheets
-└── assets/          # Images
+└──                  # Images
 ```
